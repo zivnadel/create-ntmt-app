@@ -1,6 +1,4 @@
-#! /usr/bin/env node
-
-"use strict"
+#!/usr/bin/env node
 
 const path = require("path");
 const fs = require("fs");
