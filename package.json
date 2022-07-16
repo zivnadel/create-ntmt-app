@@ -1,6 +1,6 @@
 {
 	"name": "create-ntmt-app",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
@@ -34,6 +34,6 @@
 		"typescript": "4.7.4"
 	},
 	"bin": {
-		"create-ntmt-app": "./generate-app.js"
+		"create-boilerplate": "./generate-app.js"
 	}
 }
