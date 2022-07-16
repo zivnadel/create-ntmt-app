@@ -1,9 +1,9 @@
 {
 	"name": "create-ntmt-app",
-	"version": "0.1.8",
+	"version": "0.1.7",
 	"description": "In development",
 	"bin": {
-		"create-ntmt-app": "bin/index.js"
+		"create-ntmt-app": "bin/generate-app.js"
 	},
 	"scripts": {
 		"dev": "next dev",
