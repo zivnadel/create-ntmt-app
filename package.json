@@ -3,7 +3,7 @@
 	"version": "0.1.7",
 	"description": "In development",
 	"bin": {
-		"create-ntmt-app": "node bin/generate-app.js"
+		"create-ntmt-app": "bin/generate-app.js"
 	},
 	"scripts": {
 		"dev": "next dev",
