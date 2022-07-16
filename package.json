@@ -1,57 +1,36 @@
 {
-	"name": "create-ntmt-app",
-	"version": "0.1.0",
-	"description": "Generate an NTMT App - NextJS, TypeScript, MongoDB, TailwindCSS quickly using this boilerplate ⚡",
-	"repository": "git://github.com/zivnadel/create-ntmt-app.git",
-	"author": "zivnadel",
-	"license": "MIT",
-	"bugs": "https://github.com/zivnadel/create-ntmt-app/issues",
-	"main": "bin/index.js",
-	"bin": {
-		"create-ntmt-app": "bin/index.js"
-	},
-	"keywords": [
-		"nextjs",
-		"typescript",
-		"ts",
-		"mongodb",
-		"tailwindcss",
-		"react",
-		"cypress",
-		"cli",
-		"boilerplate"
-	],
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next lint",
-		"jest": "jest",
-		"cy:open-only": "cypress open",
-		"cy:run-only": "cypress run",
-		"cy:open": "start-server-and-test dev 3000 cy:open-only",
-		"cy:run": "start-server-and-test dev 3000 cy:run-only"
-	},
-	"dependencies": {
-		"mongodb": "^4.8.0",
-		"next": "12.2.2",
-		"react": "18.2.0",
-		"react-dom": "18.2.0"
-	},
-	"devDependencies": {
-		"@types/node": "18.0.5",
-		"@types/jest": "^27.5.2",
-		"@types/react": "18.0.15",
-		"@types/react-dom": "18.0.6",
-		"autoprefixer": "^10.4.7",
-		"cypress": "^10.3.0",
-		"eslint": "8.19.0",
-		"eslint-config-next": "12.2.2",
-		"jest": "^28.1.3",
-		"postcss": "^8.4.14",
-		"start-server-and-test": "^1.14.0",
-		"tailwind-merge": "^1.4.0",
-		"tailwindcss": "^3.1.6",
-		"typescript": "4.7.4"
-	}
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "jest": "jest",
+    "cy:open-only": "cypress open",
+    "cy:run-only": "cypress run",
+    "cy:open": "start-server-and-test dev 3000 cy:open-only",
+    "cy:run": "start-server-and-test dev 3000 cy:run-only"
+  },
+  "dependencies": {
+    "mongodb": "^4.8.0",
+    "next": "12.2.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.0.5",
+    "@types/jest": "^27.5.2",
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6",
+    "autoprefixer": "^10.4.7",
+    "cypress": "^10.3.0",
+    "eslint": "8.19.0",
+    "eslint-config-next": "12.2.2",
+    "jest": "^28.1.3",
+    "postcss": "^8.4.14",
+    "start-server-and-test": "^1.14.0",
+    "tailwind-merge": "^1.4.0",
+    "tailwindcss": "^3.1.6",
+    "typescript": "4.7.4"
+  }
 }
