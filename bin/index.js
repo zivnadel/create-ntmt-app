@@ -22,26 +22,14 @@ const currentPath = process.cwd();
 const projectPath = path.join(currentPath, projectName);
 const gitRepo = "https://github.com/zivnadel/create-ntmt-app.git";
 
-function loadingAnimation(
-	text = "",
-	chars = ["⠙", "⠘", "⠰", "⠴", "⠤", "⠦", "⠆", "⠃", "⠋", "⠉"],
-	delay = 100
-) {
-	let x = 0;
-
-	return setInterval(function () {
-		process.stdout.write("\r" + chars[x++] + " " + text);
-		x = x % chars.length;
-	}, delay);
-}
-
 try {
 	fs.mkdirSync(projectPath);
 } catch (err) {
 	if (err.code === "EEXIST") {
 		console.log(
-			"\x1b[31m\x1b[0m",
-			`The file ${projectName} already exists in the current directory, please give it a different name.`
+			"\x1b[31m",
+			`The file ${projectName} already exists in the current directory, please give it a different name.`,
+			"\x1b[0m"
 		);
 	} else {
 		console.log(error);
@@ -51,28 +39,26 @@ try {
 
 async function main() {
 	try {
-		let loading = loadingAnimation();
-		console.log("\x1b[32m\x1b[0m", "Downloading files...");
+		console.log("\x1b[32m");
+		console.log("🕐 Downloading files...");
 		execSync(`git clone --depth 1 ${gitRepo} ${projectPath}`);
-		clearInterval(loading);
-
 		process.chdir(projectPath);
 
-		loading = loadingAnimation();
-		console.log("\x1b[32m\x1b[0m", "Installing dependencies...");
+		console.log("🕑 Installing dependencies...");
 		execSync("npm install");
-		clearInterval(loading);
 
-		loading = loadingAnimation();
-		console.log("\x1b[32m\x1b[0m", "Removing unecessary files...");
+		console.log("🕒 Removing unecessary files...", "\x1b[0m");
 		execSync("npx rimraf ./.git");
-		fs.rm(path.join(projectPath, "bin"), { recursive: true });
-		clearInterval(loading);
+		fs.rm(path.join(projectPath, "bin"), { recursive: true }, (error) => {
+			if (error) {
+				console.log("\x1b[31m", error, "\x1b[0m");
+			}
+		});
 
-		console.log("\x1b[34m\x1b[0m", "Successfully finished instalation!");
-		console.log("\x1b[34m\x1b[0m", `cd ${projectName} to get started! ✨`);
+		console.log("\x1b[34m", "Successfully finished instalation!");
+		console.log("\x1b[34m", `cd ${projectName} to get started! ✨`, "\x1b[0m");
 	} catch (error) {
-		console.log(error);
+		console.log("\x1b[31m", error, "\x1b[0m");
 	}
 }
 
