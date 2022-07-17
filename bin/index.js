@@ -128,6 +128,19 @@ async function main() {
 			}
 		});
 
+		// removing LICENSE and README files
+		fs.rm(path.join(projectPath, "LICENSE.md"), { recursive: true }, (error) => {
+			if (error) {
+				console.log("\x1b[31m", error, "\x1b[0m");
+			}
+		});
+
+		fs.rm(path.join(projectPath, "README.md"), { recursive: true }, (error) => {
+			if (error) {
+				console.log("\x1b[31m", error, "\x1b[0m");
+			}
+		});
+
 		console.log("\x1b[34m", "Successfully finished instalation!");
 		console.log("\x1b[34m", `cd ${projectName} to get started! ✨`, "\x1b[0m");
 	} catch (error) {
