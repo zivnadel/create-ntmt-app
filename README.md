@@ -30,7 +30,7 @@ npx create-ntmt-app my-app with-cypress
 cd my-app
 ```
 
-## Aditional Features
+## Additional Features
 The boilerplate contains testing capabilities, as shown, using cypress and jest to maximize Unit and Integration testing. I have included the [start-server-and-test](https://github.com/bahmutov/start-server-and-test) to allow for cypress testing while running the dev server.
 
 The boilerplate contains the [tailwind-merge](https://github.com/dcastil/tailwind-merge) package to allow merging tailwind classes, which I found really useful.
