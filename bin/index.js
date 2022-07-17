@@ -10,7 +10,7 @@ This function gets the project name from the args, and if no argument provided,
 the function prompts the user to enter a project name
 */
 async function getProjectName() {
-	if (process.argv.length < 3 || process.argv[2] === "with-cypress") {
+	if (process.argv.length < 3) {
 		return (projectName = await prompts({
 			type: "text",
 			message: "Enter the name of your app",
@@ -78,6 +78,7 @@ async function main() {
 		deleteProperties(packageJSON);
 
 		if (!withCypress) {
+			// deleting cypress files and config
 			deleteCypressProperties(packageJSON);
 			fs.rm(path.join(projectPath, "cypress"), { recursive: true }, (error) => {
 				if (error) {
