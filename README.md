@@ -31,7 +31,7 @@ cd my-app
 ```
 
 ## Additional Features
-The boilerplate contains testing capabilities, as shown, using cypress and jest to maximize Unit and Integration testing. I have included the [start-server-and-test](https://github.com/bahmutov/start-server-and-test) to allow for cypress testing while running the dev server.
+The boilerplate contains testing capabilities, as shown, using cypress and jest to maximize Unit and Integration testing. I have included the [start-server-and-test](https://github.com/bahmutov/start-server-and-test) package to allow for cypress testing while running the dev server.
 
 The boilerplate contains the [tailwind-merge](https://github.com/dcastil/tailwind-merge) package to allow merging tailwind classes, which I found really useful.
 
@@ -83,7 +83,7 @@ With cypress, you will also be getting:
 
 You can start building your app as you would with [create-next-app](https://nextjs.org/docs/api-reference/create-next-app).
 
-To get started with MongoDB, add your MongoDB url in MONGODB_URI environemntal variable at `.env.local`:
+To get started with MongoDB, add your MongoDB url in MONGODB_URI environmental variable at `.env.local`:
 ```
 MONGODB_URI=<your_mongodb_url>
 ```
@@ -92,7 +92,7 @@ MONGODB_URI=<your_mongodb_url>
 Thanks for using this package, happy coding!
 
 ## Issues?
-If you encounter any issues with the boilerplate, [submit an issue](https://github.com/zivnadel/create-ntmt-app/issues/new) and **make sure to include explanation and code examples.**
+If you encounter any issues with the boilerplate, **try updating your Node version**, or [submit an issue](https://github.com/zivnadel/create-ntmt-app/issues/new) and **make sure to include explanation and code examples.**
 
 ## License
 create-ntmt-app is open source software under [MIT License](https://github.com/zivnadel/create-ntmt-app/blob/master/LICENSE.md)
