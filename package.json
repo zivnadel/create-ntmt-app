@@ -1,7 +1,7 @@
 {
 	"name": "create-ntmt-app",
 	"version": "0.1.0",
-	"description": "Generate an NTMT App - NextJS, TypeScript, MongoDB, TailwindCSS quickly using this boilerplate ⚡",
+	"description": "Generate an NTMT App - NextJS, TypeScript, MongoDB, Tailwind CSS quickly using this boilerplate ⚡",
 	"repository": "git://github.com/zivnadel/create-ntmt-app.git",
 	"author": "zivnadel",
 	"license": "MIT",
