@@ -1,4 +1,4 @@
-# create-ntmt-app ![version](https://img.shields.io/badge/version-0.1.0-blue) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# create-ntmt-app ![version](https://img.shields.io/badge/version-1.0.0-blue) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Generate an NTMT App - NextJS, TypeScript, MongoDB, Tailwind CSS quickly using this boilerplate.**
 
