@@ -1,3 +1,5 @@
+### ⚡V2 is currently in development, and will include a sleek all-new CLI interface, support for Next.js 13, bug fixes, updated dependencies, and new tools    and packages!⚡
+
 # create-ntmt-app ![version](https://img.shields.io/badge/version-1.0.0-blue) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Generate an NTMT App - NextJS, TypeScript, MongoDB, Tailwind CSS quickly using this boilerplate.**
